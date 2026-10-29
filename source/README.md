@@ -104,3 +104,12 @@ print(f"Prediksi: {hasil['predicted_class']} ({hasil['confidence_percentage']})"
 print(f"Status  : {hasil['status']}")
 print(f"Tindakan: {hasil['rekomendasi']}")
 ```
+
+---
+
+## 5. Sumber Dataset
+
+* **Dataset Name:** InfraredSolarModules
+* **Organisasi / Penulis:** Raptor Maps Inc. (ICLR 2020 AI for Earth Sciences Workshop)
+* **URL Repositori Dataset:** https://github.com/RaptorMaps/InfraredSolarModules
+* **Makalah Resmi:** https://ai4earthscience.github.io/iclr-2020-workshop/papers/ai4earth22.pdf

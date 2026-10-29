@@ -67,6 +67,31 @@ Proyek ini dibangun di atas dataset publik **InfraredSolarModules** (Raptor Maps
 
 ---
 
+## 📊 Sumber & Unduhan Dataset (Dataset Source)
+
+Dataset yang digunakan dalam repositori ini adalah **InfraredSolarModules**, yaitu kumpulan data citra inframerah/termografi modul fotovoltaik beranotasi yang dirilis oleh **Raptor Maps**:
+
+* **Repositori Resmi Dataset:** [github.com/RaptorMaps/InfraredSolarModules](https://github.com/RaptorMaps/InfraredSolarModules)
+* **Publikasi Ilmiah (Paper):** [Infrared Solar Module Dataset for Anomaly Detection (ICLR 2020 Workshop)](https://ai4earthscience.github.io/iclr-2020-workshop/papers/ai4earth22.pdf)
+* **Tautan Unduh Langsung Arsip Citra:** [2020-02-14_InfraredSolarModules.zip](https://github.com/RaptorMaps/InfraredSolarModules/raw/master/2020-02-14_InfraredSolarModules.zip) (~15.5 MB)
+
+### Cara Memasang Dataset ke dalam Proyek Ini:
+
+Karena repositori Git mengecualikan file citra berukuran besar via `.gitignore`, siapkan dataset dengan langkah berikut:
+
+```powershell
+# Opsi 1: Clone repositori dataset langsung ke folder infraredsolarmodules
+git clone https://github.com/RaptorMaps/InfraredSolarModules.git infraredsolarmodules
+
+# Opsi 2: Ekstrak arsip zip dataset
+# Pastikan folder ekstraksi tersusun sesuai struktur:
+# infraredsolarmodules/2020-02-14_InfraredSolarModules/InfraredSolarModules/
+#   ├── images/ (berisi 0.jpg s.d. 19999.jpg)
+#   └── module_metadata.json
+```
+
+---
+
 ## ⚡ Cara Menjalankan Pelatihan (Training)
 
 Masuk ke folder `source/`:
@@ -103,5 +128,18 @@ python inference.py --image "path/ke/citra_termal.jpg"
 
 ---
 
-## 📄 Lisensi & Referensi
-Dataset bersumber dari penelitian Raptor Maps pada *ICLR 2020 AI for Earth Sciences Workshop*. Repositori ini didistribusikan di bawah lisensi MIT.
+## 📄 Lisensi & Referensi (Citations)
+
+Dataset bersumber dari penelitian **Raptor Maps Inc.** yang dipublikasikan pada *International Conference on Learning Representations (ICLR) 2020 Workshop on AI for Earth Sciences*. Repositori ini didistribusikan di bawah lisensi MIT.
+
+Jika menggunakan dataset ini dalam penelitian akademis, silakan merujuk pada sitasi berikut:
+
+```bibtex
+@inproceedings{millendorf2020infrared,
+  title={Infrared Solar Module Dataset for Anomaly Detection},
+  author={Millendorf, Matthew and Obropta, Edward and Vadhavkar, Nikhil},
+  booktitle={ICLR 2020 Workshop on AI for Earth Sciences},
+  year={2020},
+  url={https://ai4earthscience.github.io/iclr-2020-workshop/papers/ai4earth22.pdf}
+}
+```
