@@ -1,0 +1,40 @@
+# ==============================================================================
+# Git Ignore Configuration - IR_SOLAR_MODULE_AI_MODEL_TRAIN
+# ==============================================================================
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Model Weights & Large Checkpoints (>10MB / binary artifacts)
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+source/outputs/*.pth
+
+# Dataset Images & Archives (Dataset 20,000 citra & repo sumber tidak di-commit ke Git)
+*.zip
+infraredsolarmodules/
+Source dataset/
+
+# Operating System & IDE Configurations
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
